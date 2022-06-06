@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>SGI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script type="text/javascript" src="./js/jquery.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="headerinner">
+        <div class="logo"><a href="#"></a></div>
+        <div class="headerTop">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">인증센터</a></li>
+            <li><a href="#">상품공시</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">소비자포털</a></li>
+            <li><a href="#">GLOBAL</a></li>
+          </ul>
+        </div>
+        <nav id="gnb">
+          <ul>
+            <li><a href="#">MY SGI</a></li>
+            <li><a href="#">상품</a></li>
+            <li><a href="#">보상</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">중소기업 지원센터</a></li>
+          </ul>
+        </nav>
+        <div class="headerLink">
+          <ul>
+            <li><a href="#" class="screen">SGI 다이렉트</a></li>
+            <li><a href="#" class="search"></a></li>
+            <li><a href="#" class="siteMap"></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="mainbanner">
+        <div class="inner">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="txt-con">
+                  <h1>홈페이지 업무를 한눈에!<br>이용안내를 참고하세요!</h1>
+                  <p>로그인 한 번으로 내가 할 일을 한눈에!<br>원하는 업무를 빠르게 진행해 보세요!</p>
+                  <button class="banner-btn">자세히 보기</button>
+                </div>
+                <div class="img-con">
+                  <img src="./img/main_v1.png" alt="img1">
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="main-login">
+            <div class="login-top">
+              <h2><span class="bole-under">로그인</span> 후 <span class="bole-under">오늘의 할 일</span>을<br>진행해주세요!</h2>
+              <button class="lo-btn">개인회원</button><button class="lo-btn">법인회원</button>
+            </div>
+            <div class="login-bottom">
+              <h3>로그인 하지 않아도 할 수 있어요</h3>
+              <div class="lo-icon">
+                <ul>
+                  <li><a href="#">개인정보동의</a></li>
+                  <li><a href="#">보험증권 사서함</a></li>
+                  <li><a href="#">증권발급확인</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
